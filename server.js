@@ -5,6 +5,8 @@ const dirTree = require('directory-tree');
 const tree = dirTree('.');
 console.log(tree);
 
+console.log(process.env.OPENSHIFT_DATA_DIR );
+
 app.use(morgan('combined')) // http logging
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
