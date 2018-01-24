@@ -1,6 +1,9 @@
 var express = require('express'),
 app     = express(),
 morgan  = require('morgan');
+const dirTree = require('directory-tree');
+const tree = dirTree('.');
+console.log(tree);
 
 app.use(morgan('combined')) // http logging
 

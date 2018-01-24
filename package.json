@@ -4,12 +4,13 @@
   "description": "Node.js sample app for OpenShift 3",
   "main": "server.js",
   "dependencies": {
+    "directory-tree": "^2.0.0",
     "express": "^4.13.4",
     "morgan": "^1.9.0"
   },
   "engine": {
     "node": "*",
-    "npm": "*"
+    "npm": "* "
   },
   "scripts": {
     "start": "node server.js",
