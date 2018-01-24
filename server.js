@@ -7,9 +7,7 @@ app.use(morgan('combined')) // http logging
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
-app.get('/', function (req, res) {
-  res.render('index.html');
-});
+app.use(express.static('.'));
 
 // error handling
 app.use(function(err, req, res, next){

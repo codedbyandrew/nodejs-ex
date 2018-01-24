@@ -1,8 +1,20 @@
 <html>
 <head>
-  <title> Optum Connect </title>
+  <title>OAuth2 Test</title>
 </head>
 <body>
-  <h1>HELLO WORLD</h1>
+  <button onclick="authorize()" id="authorize">Authorize</button>
+  <div id="actions">
+    <button onclick="getUserProfile()">User profile</button>
+    <button onclick="getActivity()">Activity</button>
+    <button onclick="getWeight()">Weight</button>
+    <button onclick="getDevices()">Devices</button>
+    <button onclick="getFood()">Food</button>
+    <button onclick="getFriends()">Friends</button>
+    <button onclick="getHeartRate()">Heart Rate</button>
+    <button onclick="getSleep()">Sleep</button>
+    <button onclick="getSubscription()">Subscribe</button>
+  </div>
+  <textarea id="response_area"></textarea>
 </body>
 </html>
